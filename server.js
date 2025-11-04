@@ -10,9 +10,9 @@ app.use(express.json());
 // MongoDB Connection
 const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/blockchainDb';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected.'))
+  .then(() => console.log('Successfully connected to MongoDB.'))
   .catch(err => {
-    console.error('MongoDB connection error:', err);
+    console.error('Failed to connect to MongoDB:', err);
     process.exit(1);
   });
 
