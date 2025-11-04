@@ -1,0 +1,17 @@
+{
+  "name": "du-an-xac-thuc-giao-dich-blockchain",
+  "version": "1.0.0",
+  "description": "Dự án xác thực giao dịch bằng công nghệ blockchain.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6",
+    "web3": "^1.2.6"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
