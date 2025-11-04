@@ -11,7 +11,7 @@ app.use('/api', transactionRoutes);
 
 // MongoDB Connection
 const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/blockchainDb';
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
   .then(() => console.log('MongoDB connected.'))
   .catch(err => {
     console.error('MongoDB connection error:', err);
